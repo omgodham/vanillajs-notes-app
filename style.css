@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #7BDAF3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notes{
+position: relative;
+
+height: 600px;
+width: 600px;
+}
+.note-container{
+  position: absolute;
+    top:40px;
+    left: 40px;
+
+}
+/* .note-container:nth-child(1){ */
+    /* transform : translateY(-40px) scaleX(0.6);  
+    opacity: 0.6;  */
+
+/* .note-container:nth-child(2){
+    transform : translateY(-30px) scaleX(0.7);  
+    opacity: 0.7; 
+    z-index:-1;
+}
+.note-container:nth-child(3){
+    transform : translateY(-20px) scaleX(0.8);  
+    opacity: 0.8;
+    z-index:-2; 
+}
+.note-container:nth-child(4){
+    transform : translateY(-10px) scaleX(0.9); 
+    opacity: 0.9;
+    z-index:-3; 
+} */
+.note{
+    position: relative;
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+background-color: white;
+text-align: left;
+box-shadow: 0px 0px 11px #15151545;
+}
+.note-header{
+    background-color:#ECFAF5;
+    padding: 20px 0 20px 20px;
+    position: relative;
+    height: 60px;
+}
+.note-header i{
+    color: #9EC862;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.note-header i:nth-child(3){
+    color: black;
+   position: absolute;
+   right: 20px;
+}
+
+.text-area{
+    height: 75%;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 18px;   
+}
+.main-note{
+    height: 75%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px;
+    color: #AEB6B4;
+    background-color: rgb(255, 255, 232);
+    display: none;
+}
+.note-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.save-btn{
+    background-color:#9EC862;
+    color:white;
+    font-weight: 500;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow:1px 0px 11px 3px rgb(192 192 192 / 63%);
+    cursor: pointer;
+}
